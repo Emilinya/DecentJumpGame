@@ -1,8 +1,7 @@
 import makeWoopaShell from "./woopaShell.js";
-import {getRandomIntRange, getRandomInt} from "./utils.js"
 export default makeWoopa;
 function makeWoopa(x, y, type, wobbleHeight, wobbleWidth) {
-var woopa = new Object();
+	var woopa = new Object();
 	woopa.x = x;
 	woopa.y = y;
 	woopa.woopaType = type;
@@ -22,17 +21,6 @@ var woopa = new Object();
 	woopa.wobbleWidth = wobbleWidth;
 	woopa.wobbledY = 0;
 	woopa.draw = function (ctx) {
-		//test
-		/*
-		ctx.beginPath();
-		ctx.moveTo(this.leftX, this.bottomY);
-		ctx.lineTo(this.rightX, this.bottomY);
-		ctx.lineTo(this.rightX, this.topY);
-		ctx.lineTo(this.leftX, this.topY);
-		ctx.lineTo(this.leftX, this.bottomY);
-		ctx.fillStyle = "rgb(0, 0, 0)";
-		ctx.fill();
-		*/
 		//Bode
 		ctx.beginPath();
 		ctx.moveTo(this.x, this.y-this.size*0.5);

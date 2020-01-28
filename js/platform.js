@@ -1,6 +1,6 @@
 export default makePlatform;
 function makePlatform(x, y, width, height, type, moveDistance, moveSpeed) {
-var platform = new Object();
+	var platform = new Object();
 	platform.x = x;
 	platform.y = y;
 	platform.width = width;
@@ -99,8 +99,8 @@ var platform = new Object();
 				this.hasReachedRight = false;
 			}
 			this.x = x + this.extraX;
-
 		}
+
 		if (this.platformType == "elevator") {
 			if ((this.extraY > -this.moveDistance) && this.hasReachedTop == false) {
 				this.extraY -= this.moveSpeed;
@@ -117,8 +117,8 @@ var platform = new Object();
 			this.y = y + this.extraY;
 		}
 	}
+	
 	platform.onDeath = function() {
-
 	}
 	return platform;
 }

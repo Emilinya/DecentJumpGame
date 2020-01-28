@@ -2,7 +2,7 @@ import makeWoopa from "./woopa.js";
 
 export default makeWoopaShell;
 function makeWoopaShell(x, y, type, direction, oldX, oldY, oldType, oldWobbleHeight, oldWobbleWidth) {
-var woopaShell = new Object();
+	var woopaShell = new Object();
 	woopaShell.x = x;
 	woopaShell.y = y;
 	woopaShell.woopaShellType = type;
@@ -19,15 +19,6 @@ var woopaShell = new Object();
 	woopaShell.boopedLength = 0;
 
 	woopaShell.draw = function (ctx) {
-		//test
-		/*ctx.beginPath();
-		ctx.moveTo(this.leftX, this.bottomY);
-		ctx.lineTo(this.rightX, this.bottomY);
-		ctx.lineTo(this.rightX, this.topY);
-		ctx.lineTo(this.leftX, this.topY);
-		ctx.lineTo(this.leftX, this.bottomY);
-		ctx.fillStyle = "rgb(0, 0, 0)";
-		ctx.fill();*/
 		//Bode
 		ctx.beginPath();
 		ctx.moveTo(this.x, this.y);
@@ -137,8 +128,8 @@ var woopaShell = new Object();
 	}
 
 	woopaShell.onDeath = function() {
-
 	}
+
 	function getRandomInt(max) {
 		return Math.floor(Math.random() * Math.floor(max));
 	}

@@ -2,7 +2,6 @@ import makePlatform from "./platform.js";
 import makeWoomba from "./woomba.js";
 import makePowerup from "./powerup.js";
 import makeWoopa from "./woopa.js";
-import makeWoopaShell from "./woopaShell.js";
 import {getRandomIntRange, getRandomInt} from "./utils.js"
 
 export default generateWorld;
@@ -32,6 +31,7 @@ function generateWorld(worldHeight, entities, level) {
 	}
 	return currentHeight;
 }
+
 function platformingLevel(currentHeight, entities) {
 	for (var i = 0; i < 15; i++) {
 		var platType = getRandomIntRange(1, 5)

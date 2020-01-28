@@ -1,4 +1,3 @@
-import {getRandomIntRange, getRandomInt} from "./utils.js";
 export default makePowerup;
 function makePowerup(x, y, type) {
 	var powerup = new Object();
@@ -104,8 +103,8 @@ function makePowerup(x, y, type) {
 			}
 		}
 	}
-	powerup.onDeath = function() {
 
+	powerup.onDeath = function() {
 	}
 	return powerup;
 }

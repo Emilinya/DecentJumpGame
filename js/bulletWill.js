@@ -1,4 +1,4 @@
-import {getRandomIntRange, getRandomInt, entitiesCollide} from "./utils.js";
+import {entitiesCollide} from "./utils.js";
 export default makeBulletWill;
 function makeBulletWill(x, y, size, speed, originVelx, originVely, boomRadius) {
 	var bulletWill = new Object();

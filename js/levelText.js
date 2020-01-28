@@ -1,6 +1,6 @@
 export default makeText;
 function makeText(x, y, textTexst, lifespan) {
-var text = new Object();
+	var text = new Object();
 	text.y = y;
 	text.lifespan = lifespan;
 	text.livedSpan = 0;
@@ -22,9 +22,8 @@ var text = new Object();
 			}
 		}
 	}
-	text.onDeath = function() {
 
+	text.onDeath = function() {
 	}
 	return text;
 }
-//26/04/18-1420 kodelinjer

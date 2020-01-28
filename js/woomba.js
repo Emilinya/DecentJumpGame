@@ -3,7 +3,7 @@ import makePowerup from "./powerup.js";
 import {getRandomIntRange, getRandomInt} from "./utils.js"
 export default makeWoomba;
 function makeWoomba(x, y, type, spawnAmount, spawnedBy, launchPower) {
-var woomba = new Object();
+	var woomba = new Object();
 	woomba.x = x;
 	woomba.y = y;
 	woomba.woombaType = type;

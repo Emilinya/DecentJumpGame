@@ -1,11 +1,20 @@
-import wario from "./wario.js";
+import makeWario from "./wario.js";
 import makePlatform from "./platform.js";
 import generateWorld from "./worldGen.js";
 import makeText from "./levelText.js";
 
+var bodyDiv = document.getElementsByClassName('bodyDiv')[0];
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 var scaleFactor = 1;
+
+resize();
+window.addEventListener("resize", resize);
+function resize() {
+	canvas.width = bodyDiv.offsetWidth;
+	canvas.height = bodyDiv.offsetHeight;
+}
+
 var gg = false;
 var num = 0;
 var ticksSpent = 0;
@@ -15,6 +24,7 @@ var dt = 1;
 var previousTime = 0;
 var backgroundBrightness = 220;
 
+var wario = makeWario(50, canvas.height-50, 50);
 var entities = [];
 entities.push(wario);
 
